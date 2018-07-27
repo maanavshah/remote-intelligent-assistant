@@ -1,0 +1,30 @@
+project:
+  root: ${HOME}/REIA
+  test: ${HOME}/REIA/test
+  config: ${HOME}/REIA/config
+  utilities: ${HOME}/REIA/utilities
+
+search:
+  home: ${HOME}
+  root: /
+
+slack:
+  username: REIA
+  user: <your user id here>
+  channel: <your channel id here>
+  slack_token: <your slack token here>
+  get_url: https://slack.com/api/channels.history
+  post_url: https://slack.com/api/chat.postMessage
+  file_upload: https://slack.com/api/files.upload
+  user_info: https://slack.com/api/users.info
+  channel_info: https://slack.com/api/channels.info
+
+tagger:
+  path: /path_to_postagger/postagger/stanford-postagger.jar
+  model: english-bidirectional-distsim.tagger
+  path_to_models: /path_to_postagger/postagger/models
+
+preferences:
+  execute: False
+  similarity_threshold: 0.62
+  suggestions: True
