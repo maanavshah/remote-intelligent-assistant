@@ -1,0 +1,61 @@
+change directory
+make a new folder directory in
+create make new directory in
+copy folder from to
+make a new folder directory
+make a new folder directory in
+copy folder directory from to
+copy folder directory to from
+delete folder in
+delete folder from
+list contents of
+show contents of
+search for folder
+display contents of file
+display data of file
+copy file from to
+open file
+view file
+play file
+show contents of file
+show data of file
+show file
+display file
+copy file
+create new file in
+move file to
+delete file
+remove file
+rename file
+show my ip address
+google term
+google for
+google search for
+web search for
+display all running processes
+display all active processes
+display kernel information
+display current user information
+display information about a user
+display cpu information
+display memory information
+display time
+clear history
+delete history
+clear cache
+delete cache
+empty the recycle bin
+empty the trash
+start application
+launch application
+start application
+open application
+close application
+terminate application
+uninstall
+kill all background applications
+set reminder
+set alarm
+show trending news
+open webpage
+show weather in
