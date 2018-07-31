@@ -116,7 +116,9 @@ def call_reia():
 		print(user_input)
 		label = classify(user_input)
 		if label == "":
-			post_message("Sorry, I could not understand. Please rephrase and try again.")
+			# post_message("Sorry, I could not understand. Please rephrase and try again.")
+			with open("/home/maanav/REIA/src/user.txt", "a") as output_file:
+				output_file.write("Incorrectly mapped ::User-Input = " + user_input)
 			consume_message()
 			continue
 		print("Classified as : "+str(label))
@@ -136,8 +138,11 @@ def call_reia():
 				max_score = dist
 				map_val = i
 		if max_score < config['preferences']['similarity_threshold']:
-			post_message("Sorry, I could not understand. Please rephrase and try again.")
+			# post_message("Sorry, I could not understand. Please rephrase and try again.")
+			with open("/home/maanav/REIA/src/user.txt", "a") as output_file:
+				output_file.write("Incorrectly mapped ::User-Input = " + user_input)
 			consume_message()
+			continue
 			if config['preferences']['suggestions'] == True:
 				suggest = suggestions(suggest_list)
 				post_message("Did you mean :")
@@ -146,6 +151,8 @@ def call_reia():
 				post_message(suggest_message)
 			continue
 		print("\nMapped to : "+map_val)
+		with open("/home/maanav/REIA/src/user.txt", "a") as output_file:
+			output_file.write("correctly mapped to : " + map_val + " User-Input = " + user_input)
 		#post_message(map_val)
 		construct_command(user_input,label,tokens,map_val,stanford_tag,exec_command,user_name)
 		#call('sed -i -e "1d	" REIA/mqueue.txt')
@@ -154,4 +161,3 @@ def call_reia():
 
 print("Starting...")	
 call_reia()
-
