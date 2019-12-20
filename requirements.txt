@@ -5,4 +5,4 @@ requests==2.20.0
 slackclient==1.0.0
 textblob==0.11.1
 google_api_python_client==1.6.1
-PyYAML==3.12
+PyYAML==5.1
